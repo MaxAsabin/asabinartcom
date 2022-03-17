@@ -78,6 +78,7 @@ body {
 .main {
   background-image: url(../img/bg.jpg);
   background-size: cover;
+  background-position-x: center;
 }
 .main__container {
   display: flex;
