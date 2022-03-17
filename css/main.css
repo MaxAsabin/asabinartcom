@@ -198,7 +198,7 @@ body {
   }
   .button__item {
   min-width: 75%;
-  margin-bottom: 15px;
+  margin-bottom: 0.4rem;
   }  
  .info__button {
    align-items: center;
@@ -221,7 +221,7 @@ body {
   border: 1px solid gray;
   border-radius: 5px;
   border-style: hidden;
-  height: 65px;
+  height: 60px;
   text-align: center;
   margin-bottom: 1rem;
   background-color: #f3f7fa;
