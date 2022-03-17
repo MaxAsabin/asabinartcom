@@ -194,13 +194,16 @@ body {
   .button {
     display: flex;
     flex-direction: column;
-    
   }
+  .main__info {
+  padding: 1em 3em; 
+}
    
   .button__item {
   min-width: 75%;
   margin-bottom: 5px;
   }  
+  
  .info__button {
    align-items: center;
  }
