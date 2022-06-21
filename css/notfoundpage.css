@@ -1,0 +1,59 @@
+body {
+  overflow: hidden;
+}
+
+.not__found {
+  height: 100vh;
+  
+  
+}
+
+.notfound__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;  
+  top: 40%;
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;  
+}
+
+.notfound__text {
+  text-align: center;  
+}
+
+.notfound__button {  
+  align-self: center;   
+}
+
+.notfound__button--link {
+  display: block;
+  animation: color 20s linear infinite; 
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  padding: 1rem;  
+  line-height: 1.8rem;  
+  border: 1px;
+  border-radius: 10px;
+}
+
+.notfound__button:hover {
+  transform: scale(1.05); 
+  transition: 200ms;
+}
+
+.notfound__button--text:hover {
+color: white;
+}
+
+
+
+@keyframes color{
+  0% {background-color: #663448 ;}
+  16% {background-color: #3e3466;}
+  32% {background-color: #344566;}
+  48% {background-color:#406652;}
+  64% {background-color:  #6a6d49;}
+  83% {background-color: #a56048;}  
+  100% {background-color: #663448 ;}  
+}

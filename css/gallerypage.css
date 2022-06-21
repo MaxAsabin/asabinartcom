@@ -1,0 +1,270 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 0 auto auto;
+  overflow: scroll; 
+ }
+
+
+.banner {
+  position: fixed;
+  z-index: 1000;
+  height: fit-content;
+  
+  min-width: 100vw;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  
+  
+}
+
+.banner::after {}
+
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0.35rem 1.5rem 0.35rem;
+  
+}
+.banner__logo {
+  padding-right: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  
+}
+
+.logo__full {
+ height: 40px;
+  
+}
+
+.logo__icon {
+  display: none;
+}
+
+.banner__text {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.banner_socials {
+ 
+
+}
+
+.banner__list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0px;
+  min-width: 200px;
+  text-align: center;
+ 
+}
+
+
+
+
+.banner__item {
+ display: flex;
+ margin: 0.5rem;
+ background-color: transparent;
+ border: 0px solid #3a556b;
+ border-radius: 32px;
+ font-size: 20px;
+ text-align: center;
+ justify-content: end;
+ align-self: center;
+}
+
+.banner__icon {
+  color: white;
+  
+  
+}
+
+.gallery__content {
+  display: flex;
+  margin-top: 6rem;
+  position: relative;
+  flex-wrap: wrap;
+  
+  
+}
+
+.gallery__card {
+  max-width: 33.33333333%;
+  padding: 0.35rem;
+  
+}
+
+.card__image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.card__list {
+text-align: center;
+margin: 0 auto;
+}
+
+.card__menu {
+  text-decoration: none;
+  color:#5c7487;
+  display: inline-block;
+  border: 1px solid #3a556b;
+  border-radius: 2px;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  
+}
+
+.card__link {
+  text-decoration: none;
+  margin-top: 0.5rem;
+  border: 1px solid #5c7487;
+  border-radius: 1px;
+
+  padding: 0.2rem;
+  color: #5c7487;
+  display: inline-block;
+  margin-right: 0.3rem;
+  font-size: 0.75rem;
+
+}
+.card__link:last-child {
+  margin-right: 0;
+}
+
+.card__link:hover {
+  background-color: #d3d3d3;
+  border-color: white;
+  transform: scale(1.2);
+}
+
+
+@media (max-width:810px) {
+  .banner__content {
+    padding: 1.2rem 0.35rem 1.2rem 0.35rem;
+  }
+  .banner__text {
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+  .banner__item {
+    font-size: 14px;
+    margin: 0.3rem;
+  }
+  .banner__list {
+    max-width: 100px;
+    min-width: 90px;
+  }
+  .logo__full {
+    height: 28px;
+     
+   }
+  .icon-instagram {
+    font-size: 23px;
+  }
+  .gallery__card {
+    min-width: 50%;
+  }
+  .gallery__content {
+    justify-content: space-between;
+
+  }
+
+  
+}
+
+@media (max-width:560px) {
+  .logo__full {
+    
+    display: none;
+     
+  }
+   
+  .logo__icon {
+    display: block;
+    height: 40px;
+  }
+     
+
+
+  .gallery__card {
+    min-width: 100%;
+        
+  }
+
+  
+}
+
+@media (max-width:480px) {
+  
+  .banner__content {
+    padding: 1rem 0.35rem 1rem 0.35rem;
+  }
+  .banner__list {
+    max-width: 100px;
+    min-width: 75px;
+  }
+
+  .banner__text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  
+}
+/* --------Изображение на всю ширину при нажатии------- */
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index:1100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* --------Изображение на всю ширину при нажатии------- */

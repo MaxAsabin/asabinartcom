@@ -1,0 +1,442 @@
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0 0 auto auto;
+  overflow: scroll; 
+  background-color: black;
+ }
+
+
+.banner {
+  position: fixed;
+  z-index: 1000;
+  height: fit-content;  
+  min-width: 100vw;
+  background-size: cover;
+  animation: color 20s linear infinite; 
+  
+  
+}
+@keyframes color{
+  0% {background-color: #663448 ;}
+  16% {background-color: #3e3466;}
+  32% {background-color: #344566;}
+  48% {background-color:#406652;}
+  64% {background-color:  #6a6d49;}
+  83% {background-color: #a56048;}  
+  100% {background-color: #663448 ;}  
+}
+
+.banner::after {}
+
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0.35rem 1.5rem 0.35rem;
+  
+}
+.banner__logo {
+  padding-right: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  
+}
+
+.logo__full {
+ height: 40px;
+  
+}
+
+.logo__icon {
+  display: none;
+}
+
+.banner__text {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.icon-question-circle-o {
+  font-size: 20px;
+}
+
+.banner__list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0px;
+  min-width: 200px;
+  text-align: center;
+ 
+}
+
+
+
+
+.banner__item {
+ display: flex;
+ margin: 0.5rem;
+ background-color: transparent;
+ border: 0px solid #3a556b;
+ border-radius: 32px;
+ font-size: 20px;
+ text-align: center;
+ justify-content: end;
+ align-self: center;
+ 
+}
+
+.banner__icon {
+  color: white;
+  
+}
+
+.grid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 8vw);
+  grid-template-rows: repeat(16, 8vw);
+  gap: 0.74%;
+  margin-top: 6.5rem;
+}
+
+.grid__img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.grid__item {
+  
+}
+
+
+.grid__link-box {
+  position: absolute;
+  bottom: 15px;
+  left:50%; 
+  margin-left:-135px;
+  font-size: 13px;
+}
+
+.link-box--white {
+  color: white;
+
+}
+
+.link-box--2slots {
+  margin-left:-83px;
+
+}
+
+
+.link-box__item {
+margin-right: 10px;
+/* border: 1px solid white; */
+border-radius: 3px;
+padding: 4px 2px;
+}
+
+.link-box__item:last-child {
+margin-right: 0;
+}
+
+.link-box__item:hover {
+color: #3a556b;
+border-color: #3a556b;
+background-color: white;
+transition: 500ms;
+
+}
+.link-box__item:active {
+  color: white;
+  background-color: #3a556b;
+  border-color: white;
+}
+
+
+.link-box__icon {
+font-size: 16px;
+
+}
+
+.icon-4k {
+  
+}
+.link-box__text {
+  margin-bottom: 2px;
+}
+
+
+.grid__item {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid__item--1 {
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 1;
+grid-row-end: 4;
+}
+
+.grid__item--2 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.grid__item--3 {
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+
+
+.grid__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+
+
+.grid__item--5 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.grid__item--6 {
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+
+.grid__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 12;
+}
+
+.grid__item--8 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 11;
+}
+
+.grid__item--9 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 8;
+  grid-row-end: 12;
+}
+
+.grid__item--10 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 15;
+}
+
+.grid__item--11 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 11;
+  grid-row-end: 15;
+}
+.grid__item--12 {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 12;
+  grid-row-end: 15;
+}
+  
+
+
+@media (max-width:1100px) {
+  .link-box__text {
+    font-size: 14px;
+  }
+  .link-box__item {
+    margin-right: 5px ;
+  }
+
+  .link-box__icon {
+    font-size: 14px;
+  }
+  .grid__link-box {
+    display: flex;
+    flex-direction: column;
+    left: 5%;    
+    margin-left:0;    
+  }  
+}
+
+@media (max-width:810px) {
+  .banner__content {
+    padding: 1.2rem 0.35rem 1.2rem 0.35rem;
+  }
+  .banner__text {
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+  .banner__item {
+    font-size: 14px;
+    margin: 0.3rem;
+  }
+  .banner__list {
+    max-width: 100px;
+    min-width: 90px;
+  }
+  .logo__full {
+    height: 28px;
+     
+   }
+  .icon-instagram {
+    font-size: 23px;
+  }  
+}
+
+@media (max-width:760px) {
+   
+  .grid__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid__item {
+    margin-bottom: 1vw;    
+  }
+
+  .grid__link-box {
+    display: block;
+    left: 50%;
+    margin-left: -175px;
+    bottom: 10%;        
+  }
+
+  .link-box__item {
+     margin-right: 15px;
+  }
+  .link-box__text {
+    font-size: 18px;
+  }
+  .link-box__icon {
+    font-size: 18px;
+  }  
+  .link-box--2slots {
+    margin-left: -105px;
+  }
+}
+
+
+@media (max-width:560px) {
+  .logo__full {
+    
+    display: none;
+     
+  }
+   
+  .logo__icon {
+    display: block;
+    height: 40px;
+  } 
+}
+
+@media (max-width:480px) {
+  
+  .banner__content {
+    padding: 1rem 0.35rem 1rem 0.35rem;
+  }
+  .banner__list {
+    max-width: 100px;
+    min-width: 75px;
+  }
+
+  .banner__text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .grid__link-box {
+    
+    margin-left: -138px;  
+}
+
+  .link-box__item {
+    margin-right: 10px;
+ }
+ .link-box__text {
+   font-size: 14px;
+ }
+ .link-box__icon {
+   font-size: 14px;
+ }  
+ .link-box--2slots {
+  margin-left: -83px;
+}
+}
+
+/* --------Изображение на всю ширину при нажатии------- */
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index:1100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* --------Изображение на всю ширину при нажатии------- */
